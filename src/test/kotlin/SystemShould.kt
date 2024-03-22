@@ -7,8 +7,8 @@ class SystemShould {
     @Test
     fun `check if is an email`() {
         val check = Check()
-        Assert.assertTrue(check.thisIsA("markensi9@outlook.com"))
-        Assert.assertFalse(check.thisIsA("markensi%@outlook.com"))
+        Assert.assertTrue(check.thisIsA("marcos@outlook.com"))
+        Assert.assertFalse(check.thisIsA("markensi%@frfgr.com"))
     }
 
     @Test
@@ -25,7 +25,7 @@ class SystemShould {
         setup.users()
         val listOfUsers = setup.listOfUsers()
 
-        Assert.assertTrue(check.existThisEmailIn(listOfUsers, "markensi9@outlook.com"))
-        Assert.assertFalse(check.existThisEmailIn(listOfUsers, "gt5rt93@gmial.com"))
+        Assert.assertTrue(check.existThisEmailIn(listOfUsers, "marcos@outlook.com"))
+        Assert.assertFalse(check.existThisEmailIn(listOfUsers, "diei.frij93@gmial.com"))
     }
 }
